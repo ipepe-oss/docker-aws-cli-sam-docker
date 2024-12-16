@@ -2,5 +2,4 @@
 
 set -e
 
-docker build -t ipepe/aws-cli-sam-docker . --no-cache
-docker push ipepe/aws-cli-sam-docker
+docker buildx build --platform=linux/amd64,linux/arm64 --push --tag  ipepe/aws-cli-sam-docker .

@@ -1,4 +1,4 @@
-FROM --platform=linux/amd64 amazon/aws-cli
+FROM amazon/aws-cli
 RUN amazon-linux-extras install docker && \
  yum install -y wget unzip && \
  wget https://github.com/aws/aws-sam-cli/releases/latest/download/aws-sam-cli-linux-x86_64.zip -o /tmp/aws-sam-cli-linux-x86_64.zip && \
